@@ -21,29 +21,7 @@ import com.intro.Customize
 import com.intro.General
 
 WebUI.openBrowser("https://dev01-b20.fairatmos.dev/", FailureHandling.STOP_ON_FAILURE)
-WebUI.maximizeWindow()
 //WebUI.navigateToUrl("https://dev01-b20.fairatmos.dev/", FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(3)
-Customize.elementClickableByXpath("//img[@alt = 'Flight']")
-WebUI.delay(3)
-Customize.elementClickableByXpath("//span[(text() = 'Domestic' or . = 'Domestic')]")
-WebUI.delay(3)
-
-WebUI.delay(3)
-Customize.elementClickableByXpath("//span[(text() = 'International' or . = 'International')]")
-WebUI.delay(3)
-Customize.elementClickableByXpath("(//span[@class = 'ant-select-selection-item'])[1]")
-WebUI.delay(3)
-Customize.elementClickableByXpath("//div[@class = 'ant-select-item-option-content' and (text() = 'Cyprus' or . = 'Cyprus')]")
-
-WebUI.delay(3)
-Customize.elementClickableByXpath("(//span[@class = 'ant-select-selection-item'])[2]")
-WebUI.delay(3)
-Customize.elementClickableByXpath("//div[@class = 'ant-select-item-option-content' and (text() = 'Bali, Indonesia' or . = 'Bali, Indonesia')]")
-
-def fromFlight = Customize.elementGetTextByXpath("(//span[@class = 'ant-select-selection-item'])[1]")
-def toFlight = Customize.elementGetTextByXpath("(//span[@class = 'ant-select-selection-item'])[2]")
-WebUI.delay(3)
-Customize.elementClickableByXpath("//span[(text() = 'Domestic' or . = 'Domestic')]")
-
+Customize.elementClickableByXpath("//img[@alt = 'Attraction']")

@@ -26,7 +26,7 @@ import internal.GlobalVariable
 import org.openqa.selenium.Keys
 
 public class Customize {
-	
+
 	public static def getAttribute(xpath){
 		TestObject titleObject = new TestObject("Object")
 		titleObject.addProperty("xpath", ConditionType.EQUALS, xpath, true)
@@ -224,5 +224,4 @@ public class Customize {
 			return 0
 		}
 	}
-
 }
